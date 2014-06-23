@@ -1,0 +1,14 @@
+<h1>HireMe! Dev List</h1>
+
+<%= form_for @dev do |f| %>
+  Name: <%= f.text_field :name %><br />
+  Bio: <%= f.text_area :description %><br />
+  Code: <%= f.text_field :url %><br />
+  <%= f.submit %>
+<% end %>
+
+<% @devs.each do |dev| %>
+  <%= dev.name %>
+  <%= dev.description %>
+  <%= link_to "Code", dev.url %>
+<% end %>
