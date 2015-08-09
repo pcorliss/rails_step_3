@@ -33,7 +33,7 @@
         <div class="col-sm-5">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title"><%= dev.name %> | <%= link_to "Git", dev.url %></h3>
+              <h3 class="panel-title"><%= dev.name %> | <%= link_to "Git", dev.url, no_follow: true %></h3>
             </div>
             <div class="panel-body">
               <%= dev.description %>
